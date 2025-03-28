@@ -37,18 +37,42 @@
         };
 
         EN {
-            bindings = <&to 0>;
+            bindings = <&en_macro>;
             key-positions = <40 30>;
+            layers = <0>;
         };
 
         RU {
-            bindings = <&to 1>;
+            bindings = <&ru_macros>;
             key-positions = <40 31>;
         };
 
         UA {
-            bindings = <&to 2>;
-            key-positions = <40 32>;
+            bindings = <&ua_macros>;
+            key-positions = <32 40>;
+        };
+    };
+
+    macros {
+        en_macro: en_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK &to 0>;
+            label = "EN_MACRO";
+        };
+
+        ru_macros: ru_macros {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK &kp LEFT_ALT &kp LEFT_COMMAND &kp SPACE &to 1>;
+            label = "RU_MACROS";
+        };
+
+        ua_macros: ua_macros {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK &kp LEFT_ALT &kp LEFT_COMMAND &kp SPACE &kp LEFT_ALT &kp LEFT_COMMAND &kp SPACE &to 2>;
+            label = "UA_MACROS";
         };
     };
 
