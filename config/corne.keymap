@@ -57,21 +57,21 @@
         en_macro: en_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &to 0>;
+            bindings = <&kp CAPSLOCK &kp CAPSLOCK &to 0>;
             label = "EN_MACRO";
         };
 
         ru_macros: ru_macros {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &kp LEFT_ALT &kp LEFT_COMMAND &kp SPACE &to 1>;
+            bindings = <&kp CAPSLOCK &kp LEFT_COMMAND &kp GLOBE &to 1>;
             label = "RU_MACROS";
         };
 
         ua_macros: ua_macros {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &kp LEFT_ALT &kp LEFT_COMMAND &kp SPACE &kp LEFT_ALT &kp LEFT_COMMAND &kp SPACE &to 2>;
+            bindings = <&kp CAPSLOCK &kp LEFT_COMMAND &kp SPACE &kp LEFT_COMMAND &kp SPACE &to 2>;
             label = "UA_MACROS";
         };
     };
@@ -98,7 +98,7 @@
             bindings = <
 &kp ESCAPE  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_E RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
 &kp TAB     &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHIFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_FSLH          &trans
+&kp LSHIFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp SLASH            &trans
                                                            &kp LGUI            &kp LEFT_ALT        &kp SPACE                           &kp BACKSPACE       &kp LCTRL                                        &kp ENTER
             >;
         };
@@ -107,15 +107,15 @@
             bindings = <
 &kp ESCAPE  &kp UK_CYRILLIC_SHORT_I  &kp UK_CYRILLIC_TSE                   &kp UK_CYRILLIC_U   &kp UK_CYRILLIC_KA  &mt UK_UKRAINIAN_IE UK_CYRILLIC_IE    &kp UK_CYRILLIC_EN  &mt UK_CYRILLIC_GHE_UPTURN UK_CYRILLIC_GHE  &kp UK_CYRILLIC_SHA  &kp UK_CYRILLIC_SHCHA  &kp UK_CYRILLIC_ZE   &kp UK_CYRILLIC_HA
 &kp TAB     &kp UK_CYRILLIC_EF       &mt UK_CYRILLIC_YI UK_BYELORUSSIAN_I  &kp UK_CYRILLIC_VE  &kp UK_CYRILLIC_A   &kp UK_CYRILLIC_PE                    &kp UK_CYRILLIC_ER  &kp UK_CYRILLIC_O                           &kp UK_CYRILLIC_EL   &kp UK_CYRILLIC_DE     &kp UK_CYRILLIC_ZHE  &kp UK_UKRAINIAN_IE
-&kp LSHIFT  &kp UK_CYRILLIC_YA       &kp UK_CYRILLIC_CHE                   &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I                     &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN                   &kp UK_CYRILLIC_BE   &kp UK_CYRILLIC_YU     &kp RU_FSLH          &trans
+&kp LSHIFT  &kp UK_CYRILLIC_YA       &kp UK_CYRILLIC_CHE                   &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I                     &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN                   &kp UK_CYRILLIC_BE   &kp UK_CYRILLIC_YU     &kp SLASH            &trans
                                                                            &kp LGUI            &kp LEFT_ALT        &kp SPACE                             &kp BACKSPACE       &kp LCTRL                                   &kp ENTER
             >;
         };
 
         NAV_1 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans             &mmv MOVE_Y(-300)  &trans            &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans       &to 3   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &msc SCRL_DOWN  &trans             &mmv MOVE_Y(-400)  &trans            &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &trans       &to 3   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
 &trans  &trans          &trans             &trans             &trans            &mkp RCLK    &to 7   &trans    &trans        &trans     &trans         &trans
                                            &to 4              &mkp LCLK         &trans       &trans  &trans    &trans
             >;
@@ -150,9 +150,9 @@
 
         NAV_0 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans             &mmv MOVE_Y(-200)  &trans            &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv MOVE_X(-200)  &mmv MOVE_Y(200)   &mmv MOVE_X(200)  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
-&trans  &trans          &trans             &trans             &trans            &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
+&trans  &msc SCRL_DOWN  &trans             &mmv MOVE_Y(-100)  &trans            &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_X(-100)  &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &trans       &to 3   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &trans          &trans             &trans             &trans            &mkp RCLK    &to 7   &trans    &trans        &trans     &trans         &trans
                                            &to 4              &mkp LCLK         &trans       &trans  &trans    &trans
             >;
         };
