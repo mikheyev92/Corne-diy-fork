@@ -17,23 +17,38 @@
         compatible = "zmk,combos";
 
         ctrl_last_to_settings {
-            bindings = <&mo 4>;
+            bindings = <&mo 6>;
             key-positions = <40 35>;
         };
 
         NAV {
-            bindings = <&to 1>;
+            bindings = <&to 3>;
             key-positions = <37 27>;
         };
 
         NUM {
-            bindings = <&to 2>;
+            bindings = <&to 4>;
             key-positions = <37 28>;
         };
 
         ADJ {
-            bindings = <&to 3>;
+            bindings = <&to 5>;
             key-positions = <37 29>;
+        };
+
+        EN {
+            bindings = <&to 0>;
+            key-positions = <40 30>;
+        };
+
+        RU {
+            bindings = <&to 1>;
+            key-positions = <40 31>;
+        };
+
+        UA {
+            bindings = <&to 2>;
+            key-positions = <40 32>;
         };
     };
 
@@ -55,12 +70,30 @@
             >;
         };
 
+        RU {
+            bindings = <
+&kp ESCAPE  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_E RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
+&kp TAB     &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
+&kp LSHIFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_FSLH          &trans
+                                                           &kp LGUI            &kp LEFT_ALT        &kp SPACE                           &kp BACKSPACE       &kp LCTRL                                        &kp ENTER
+            >;
+        };
+
+        UA {
+            bindings = <
+&kp ESCAPE  &kp UK_CYRILLIC_SHORT_I  &kp UK_CYRILLIC_TSE                   &kp UK_CYRILLIC_U   &kp UK_CYRILLIC_KA  &mt UK_UKRAINIAN_IE UK_CYRILLIC_IE    &kp UK_CYRILLIC_EN  &mt UK_CYRILLIC_GHE_UPTURN UK_CYRILLIC_GHE  &kp UK_CYRILLIC_SHA  &kp UK_CYRILLIC_SHCHA  &kp UK_CYRILLIC_ZE   &kp UK_CYRILLIC_HA
+&kp TAB     &kp UK_CYRILLIC_EF       &mt UK_CYRILLIC_YI UK_BYELORUSSIAN_I  &kp UK_CYRILLIC_VE  &kp UK_CYRILLIC_A   &kp UK_CYRILLIC_PE                    &kp UK_CYRILLIC_ER  &kp UK_CYRILLIC_O                           &kp UK_CYRILLIC_EL   &kp UK_CYRILLIC_DE     &kp UK_CYRILLIC_ZHE  &kp UK_UKRAINIAN_IE
+&kp LSHIFT  &kp UK_CYRILLIC_YA       &kp UK_CYRILLIC_CHE                   &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I                     &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN                   &kp UK_CYRILLIC_BE   &kp UK_CYRILLIC_YU     &kp RU_FSLH          &trans
+                                                                           &kp LGUI            &kp LEFT_ALT        &kp SPACE                             &kp BACKSPACE       &kp LCTRL                                   &kp ENTER
+            >;
+        };
+
         NAV {
             bindings = <
 &trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &trans  &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
 &to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
 &trans  &trans          &trans          &trans          &trans           &mkp RCLK    &trans  &trans    &trans        &trans     &trans         &trans
-                                        &to 2           &mkp LCLK        &trans       &trans  &trans    &trans
+                                        &to 4           &mkp LCLK        &trans       &trans  &trans    &trans
             >;
         };
 
@@ -69,7 +102,7 @@
 &kp GRAVE  &kp DELETE      &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH    &kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp BACKSPACE
 &to 0      &kp UNDERSCORE  &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                  &kp STAR   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &kp EQUAL
 &trans     &kp K_UNDO      &kp K_CUT  &kp K_COPY            &kp K_PASTE            &kp K_REDO              &kp COMMA  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp ENTER
-                                      &to 3                 &trans                 &trans                  &trans     &trans        &kp N0
+                                      &to 5                 &trans                 &trans                  &trans     &trans        &kp N0
             >;
         };
 
@@ -88,24 +121,6 @@
 &trans  &bt BT_CLR    &trans        &trans        &trans        &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &bootloader
                                     &trans        &trans        &trans            &trans  &trans  &trans
-            >;
-        };
-
-        RU {
-            bindings = <
-&kp ESCAPE  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA  &mt RU_CYRILLIC_E RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE                              &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
-&kp TAB     &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A   &kp RU_CYRILLIC_PE                  &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O                                &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_E
-&kp LSHIFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I                   &kp RU_CYRILLIC_TE  &mt RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_FSLH          &trans
-                                                           &kp LGUI            &kp LEFT_ALT        &kp SPACE                           &kp BACKSPACE       &kp LCTRL                                        &kp ENTER
-            >;
-        };
-
-        UA {
-            bindings = <
-&kp ESCAPE  &kp UK_CYRILLIC_SHORT_I  &kp UK_CYRILLIC_TSE                   &kp UK_CYRILLIC_U   &kp UK_CYRILLIC_KA  &mt UK_UKRAINIAN_IE UK_CYRILLIC_IE    &kp UK_CYRILLIC_EN  &mt UK_CYRILLIC_GHE_UPTURN UK_CYRILLIC_GHE  &kp UK_CYRILLIC_SHA  &kp UK_CYRILLIC_SHCHA  &kp UK_CYRILLIC_ZE   &kp UK_CYRILLIC_HA
-&kp TAB     &kp UK_CYRILLIC_EF       &mt UK_CYRILLIC_YI UK_BYELORUSSIAN_I  &kp UK_CYRILLIC_VE  &kp UK_CYRILLIC_A   &kp UK_CYRILLIC_PE                    &kp UK_CYRILLIC_ER  &kp UK_CYRILLIC_O                           &kp UK_CYRILLIC_EL   &kp UK_CYRILLIC_DE     &kp UK_CYRILLIC_ZHE  &kp UK_UKRAINIAN_IE
-&kp LSHIFT  &kp UK_CYRILLIC_YA       &kp UK_CYRILLIC_CHE                   &kp UK_CYRILLIC_ES  &kp UK_CYRILLIC_EM  &kp UK_CYRILLIC_I                     &kp UK_CYRILLIC_TE  &kp UK_CYRILLIC_SOFT_SIGN                   &kp UK_CYRILLIC_BE   &kp UK_CYRILLIC_YU     &kp RU_FSLH          &trans
-                                                                           &kp LGUI            &kp LEFT_ALT        &kp SPACE                             &kp BACKSPACE       &kp LCTRL                                   &kp ENTER
             >;
         };
     };
