@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <behaviors.dtsi>
 #include "keys_uk.h"
 #include "keys_ru.h"
 #include <behaviors.dtsi>
