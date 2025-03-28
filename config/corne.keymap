@@ -86,7 +86,7 @@
 &trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &trans  &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
 &to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
 &trans  &trans          &trans          &trans          &trans           &mkp RCLK    &trans  &trans    &trans        &trans     &trans         &trans
-                                        &trans          &mkp LCLK        &trans       &trans  &trans    &trans
+                                        &to 2           &mkp LCLK        &trans       &trans  &trans    &trans
             >;
         };
 
