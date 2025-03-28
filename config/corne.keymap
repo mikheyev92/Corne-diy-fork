@@ -66,7 +66,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        EN {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | ENTR |
@@ -81,33 +81,12 @@
             >;
         };
 
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // | SYSR |     |     |     |     |     |   |     |  1  |  2  |  3  |  0  |      |
-            // |      |     |     | UP  |     |     |   |     |  4  |  5  |  6  |     |      |
-            // |      |     | LFT | DWN | RGT |     |   |     |  7  |  8  |  9  |     |      |
-            //                    |     |     | SPC |   | SPC |     |     |
-
+        NAV {
             bindings = <
-&sys_reset      &mmv MOVE_UP    &trans           &trans    &trans     &trans       &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans
-&mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP    &trans     &trans       &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&trans          &trans          &kp LEFT         &kp DOWN  &kp RIGHT  &trans       &trans     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
-                                                 &trans    &trans     &kp SPACE    &kp SPACE  &trans        &trans
-            >;
-        };
-
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  &  |  %  |   |  ^  |  $  |  *  |  (  |  )  | BSPC |
-            // | CTRL |MUTE |V_UP |V_DWN|  <  |  >  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | SPC |     | ALT |
-
-            bindings = <
-&kp TAB    &kp EXCL    &kp AT             &kp HASH         &kp AMPERSAND  &kp PRCNT           &kp CARET  &kp DOLLAR  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LESS_THAN  &kp GREATER_THAN    &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans      &trans             &trans           &trans         &trans              &kp UNDER  &kp PLUS    &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                          &kp LGUI         &trans         &kp SPACE           &kp SPACE  &trans      &kp RALT
+&trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &trans  &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &trans          &trans          &trans          &trans           &mkp RCLK    &trans  &trans    &trans        &trans     &trans         &trans
+                                        &trans          &mkp LCLK        &trans       &trans  &trans    &trans
             >;
         };
     };
