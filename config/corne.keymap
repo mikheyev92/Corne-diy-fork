@@ -89,8 +89,8 @@
 
         NAV_0 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans          &mmv_accel_0 MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv_accel_0 MOVE_LEFT  &mmv_accel_0 MOVE_DOWN  &mmv_accel_0 MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
 &trans  &trans          &trans          &trans          &trans           &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
                                         &to 4           &mkp LCLK        &trans       &trans  &trans    &trans
             >;
@@ -125,8 +125,8 @@
 
         NAV_1 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans          &mmv_accel_1 MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv_accel_1 MOVE_LEFT  &mmv_accel_1 MOVE_DOWN  &mmv_accel_1 MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
 &trans  &trans          &trans          &trans          &trans           &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
                                         &to 4           &mkp LCLK        &trans       &trans  &trans    &trans
             >;
@@ -134,8 +134,8 @@
 
         NAV_2 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans          &mmv_accel_2 MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv_accel_2 MOVE_LEFT  &mmv_accel_2 MOVE_DOWN  &mmv_accel_2 MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
 &trans  &trans          &trans          &trans          &trans           &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
                                         &to 4           &mkp LCLK        &trans       &trans  &trans    &trans
             >;
