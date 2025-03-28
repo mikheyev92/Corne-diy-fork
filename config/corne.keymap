@@ -88,12 +88,12 @@
             >;
         };
 
-        NAV_0 {
+        NAV_1 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
-&trans  &trans          &trans          &trans          &trans           &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
-                                        &to 4           &mkp LCLK        &trans       &trans  &trans    &trans
+&trans  &msc SCRL_DOWN  &trans             &mmv MOVE_Y(-300)  &trans            &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans       &to 3   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &trans          &trans             &trans             &trans            &mkp RCLK    &to 7   &trans    &trans        &trans     &trans         &trans
+                                           &to 4              &mkp LCLK         &trans       &trans  &trans    &trans
             >;
         };
 
@@ -124,21 +124,21 @@
             >;
         };
 
-        NAV_1 {
+        NAV_0 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
-&trans  &trans          &trans          &trans          &trans           &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
-                                        &to 4           &mkp LCLK        &trans       &trans  &trans    &trans
+&trans  &msc SCRL_DOWN  &trans             &mmv MOVE_Y(-200)  &trans            &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_X(-200)  &mmv MOVE_Y(200)   &mmv MOVE_X(200)  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &trans          &trans             &trans             &trans            &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
+                                           &to 4              &mkp LCLK         &trans       &trans  &trans    &trans
             >;
         };
 
         NAV_2 {
             bindings = <
-&trans  &msc SCRL_DOWN  &trans          &mmv MOVE_UP    &trans           &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
-&to 0   &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans       &to 7   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
-&trans  &trans          &trans          &trans          &trans           &mkp RCLK    &to 3   &trans    &trans        &trans     &trans         &trans
-                                        &to 4           &mkp LCLK        &trans       &trans  &trans    &trans
+&trans  &msc SCRL_DOWN  &trans             &mmv MOVE_Y(-600)  &trans            &trans       &to 8   &trans    &kp UP_ARROW  &trans     &kp PG_UP      &kp HOME
+&to 0   &msc SCRL_UP    &mmv MOVE_X(-600)  &mmv MOVE_Y(600)   &mmv MOVE_X(600)  &trans       &to 3   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &kp END
+&trans  &trans          &trans             &trans             &trans            &mkp RCLK    &to 7   &trans    &trans        &trans     &trans         &trans
+                                           &to 4              &mkp LCLK         &trans       &trans  &trans    &trans
             >;
         };
     };
