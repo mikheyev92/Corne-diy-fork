@@ -18,6 +18,21 @@
             bindings = <&mo 4>;
             key-positions = <40 35>;
         };
+
+        NAV {
+            bindings = <&to 1>;
+            key-positions = <37 27>;
+        };
+
+        NUM {
+            bindings = <&to 2>;
+            key-positions = <37 28>;
+        };
+
+        ADJ {
+            bindings = <&to 3>;
+            key-positions = <37 29>;
+        };
     };
 
     keymap {
